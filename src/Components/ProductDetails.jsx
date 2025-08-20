@@ -8,6 +8,7 @@ import { useLocation, useNavigate } from "react-router-dom"
 export default function ProductDetails({cartItems,handleAddToCart}){
     const navigate =useNavigate();
     const location = useLocation();
+     
     const {title,price,images,description,category,id}=location.state;
 
     const[otherProducts,setOtherProducts] = useState([]);
@@ -18,7 +19,7 @@ export default function ProductDetails({cartItems,handleAddToCart}){
   
         } 
         getData();
-    },[category.id])
+    },[])
     return(
         <div style={{padding:50}}>
         <Row>
@@ -53,9 +54,9 @@ export default function ProductDetails({cartItems,handleAddToCart}){
             <div style={{display:'flex',flexWrap:'wrap'}}>
                 <h2>other product in same category</h2>
             {otherProducts.map((product) => {
-                if(product.id == id) return
-                 return(
-                    <Card key={product.id} style={{width:'7rem', border:'none',margin:20}}>
+                if(product.id == id)return
+                return(
+                    <Card key={product} style={{width:'7rem', border:'none',margin:20}}>
                         <Card.Img src={product.images[0]} />
                         <Card.Title>{product.title.split(" ")[0]}</Card.Title>
                         <Card.Text>$ {product.price}</Card.Text>
@@ -63,7 +64,7 @@ export default function ProductDetails({cartItems,handleAddToCart}){
                     </Card>
                 )
             
-     })}
+ } )}
             </div>
             </Col>
         </Row>
