@@ -1,6 +1,7 @@
 import { Row,Col,Form,Button } from 'react-bootstrap';
 import SignUpImg from '../Assests/SignUpImg.png';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useState } from 'react';
 
 function SignUp({setUser}){
@@ -38,8 +39,7 @@ function SignUp({setUser}){
         Join the club 
       </Button>
         <div style={{color:'white'}}>
-           Already a member?,<a href='' style={{color:'white'}} onClick={() => navigate('/Login')}>click here</a>
-        </div>
+              Already a member? <Link to="/Login" style={{ color: 'white' }}>click here</Link>        </div>
       </Form>
             </Col>
             <Col>

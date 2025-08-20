@@ -1,6 +1,6 @@
 import { Row,Col,Form,Button } from 'react-bootstrap';
 import LoginImg from '../Assests/LoginImg.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
 import { useState } from 'react';
 
 function Login({setUser}){
@@ -32,8 +32,7 @@ function Login({setUser}){
         Start shopping 
       </Button>
         <div style={{color:'white'}}>
-           Join the club,  <a href='' style={{color:'white'}} onClick={()=>navigate('/SignUp')}>click here </a>
-        </div>
+            Join the club, <Link to="/SignUp" style={{ color: 'white' }}>click here</Link>        </div>
       </Form>
             </Col>
             <Col>

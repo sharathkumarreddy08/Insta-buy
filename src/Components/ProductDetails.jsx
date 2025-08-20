@@ -53,7 +53,7 @@ export default function ProductDetails({cartItems,handleAddToCart}){
             <div style={{display:'flex',flexWrap:'wrap'}}>
                 <h2>other product in same category</h2>
             {otherProducts.map((product)=>{
-                if(product.id === id)return
+                if(product.id === id)
                  return(
                     <Card key={product.id} style={{width:'7rem', border:'none',margin:20}}>
                         <Card.Img src={product.images[0]} />
