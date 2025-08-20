@@ -56,7 +56,7 @@ export default function Cart({cartItems}){
                 </Col>
 
                 <Col>
-                <img src={cartImage} height={500}/>
+                <img src={cartImage} alt="" height={500}/>
                 </Col>
             </Row>
         </div>

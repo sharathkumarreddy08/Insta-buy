@@ -38,12 +38,12 @@ function SignUp({setUser}){
         Join the club 
       </Button>
         <div style={{color:'white'}}>
-           Already a member?,<a style={{color:'white'}} onClick={() => navigate('/Login')}>click here</a>
+           Already a member?,<a href='' style={{color:'white'}} onClick={() => navigate('/Login')}>click here</a>
         </div>
       </Form>
             </Col>
             <Col>
-            <img src={SignUpImg} style={{height:'80vh'}}/>
+            <img src={SignUpImg} style={{height:'80vh'}} alt=''/>
             </Col>
         </Row>
        </div>

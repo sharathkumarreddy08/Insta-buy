@@ -32,12 +32,12 @@ function Login({setUser}){
         Start shopping 
       </Button>
         <div style={{color:'white'}}>
-           Join the club,<a  style={{color:'white'}} onClick={()=>navigate('/SignUp')}>click here</a>
+           Join the club,  <a href='' style={{color:'white'}} onClick={()=>navigate('/SignUp')}>click here </a>
         </div>
       </Form>
             </Col>
             <Col>
-            <img src={LoginImg} style={{height:'80vh'}}/>
+            <img src={LoginImg} style={{height:'80vh'}} alt=''/>
             </Col>
         </Row>
        </div>

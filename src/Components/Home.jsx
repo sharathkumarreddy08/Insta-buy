@@ -42,16 +42,16 @@ function Home({user}){
             </div>
             <div>
                 <h6>products are available here:</h6>
-                <img src={CompanyOneImg} style={{height:50}}/>
-                <img src={CompanyTwoImg} style={{height:50}}/>
-                 <img src={CompanyThreeImg} style={{height:50}}/>
-                <img src={CompanyFourImg} style={{height:50}}/>
-                <img src={CompanyFiveImg} style={{height:50}}/>
-                <img src={CompanySixImg} style={{height:50}}/>
+                <img src={CompanyOneImg} style={{height:50}} alt=''/>
+                <img src={CompanyTwoImg} style={{height:50}} alt=''/>
+                 <img src={CompanyThreeImg} style={{height:50}} alt=''/>
+                <img src={CompanyFourImg} style={{height:50}} alt=''/>
+                <img src={CompanyFiveImg} style={{height:50}}alt=''/>
+                <img src={CompanySixImg} style={{height:50}}alt=''/>
             </div>
            </div>
             </Col>
-            <Col> <img src={CarouselOneImg} style={{height:'80vh' ,width:'45vw'}} />
+            <Col> <img src={CarouselOneImg} style={{height:'80vh' ,width:'45vw'}} alt='' />
             </Col>
                 </Row>
                 </Carousel.Item>
@@ -67,16 +67,16 @@ function Home({user}){
             </div>
             <div>
                 <h6>products are available here:</h6>
-                <img src={CompanyOneImg} style={{height:50}}/>
-                <img src={CompanyTwoImg} style={{height:50}}/>
-                 <img src={CompanyThreeImg} style={{height:50}}/>
-                <img src={CompanyFourImg} style={{height:50}}/>
-                <img src={CompanyFiveImg} style={{height:50}}/>
-                <img src={CompanySixImg} style={{height:50}}/>
+                <img src={CompanyOneImg} style={{height:50}} alt=''/>
+                <img src={CompanyTwoImg} style={{height:50}} alt=''/>
+                 <img src={CompanyThreeImg} style={{height:50}} alt=''/>
+                <img src={CompanyFourImg} style={{height:50}} alt=''/>
+                <img src={CompanyFiveImg} style={{height:50}} alt=''/>
+                <img src={CompanySixImg} style={{height:50}} alt=''/>
             </div>
            </div>
             </Col>
-            <Col> <img src={CarouselTwoImg} style={{height:'80vh',width:'45vw'}} /></Col>
+            <Col> <img src={CarouselTwoImg} alt='' style={{height:'80vh',width:'45vw'}} /></Col>
                     </Row>
                 </Carousel.Item>
                  <Carousel.Item>
@@ -91,16 +91,16 @@ function Home({user}){
             </div>
             <div>
                 <h6>products are available here:</h6>
-                <img src={CompanyOneImg} style={{height:50}}/>
-                <img src={CompanyTwoImg} style={{height:50}}/>
-                 <img src={CompanyThreeImg} style={{height:50}}/>
-                <img src={CompanyFourImg} style={{height:50}}/>
-                <img src={CompanyFiveImg} style={{height:50}}/>
-                <img src={CompanySixImg} style={{height:50}}/>
+                <img src={CompanyOneImg} style={{height:50}} alt=''/>
+                <img src={CompanyTwoImg} style={{height:50}} alt=''/>
+                 <img src={CompanyThreeImg} style={{height:50}} alt=''/>
+                <img src={CompanyFourImg} style={{height:50}} alt=''/>
+                <img src={CompanyFiveImg} style={{height:50}} alt=''/>
+                <img src={CompanySixImg} style={{height:50}} alt=''/>
             </div>
            </div>
             </Col>
-            <Col> <img src={CarouselThreeImg} style={{height:'80vh',width:'45vw'}}/></Col>
+            <Col> <img src={CarouselThreeImg} alt='' style={{height:'80vh',width:'45vw'}}/></Col>
                 </Row>
                 </Carousel.Item>
                 
