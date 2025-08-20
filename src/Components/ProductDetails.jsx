@@ -52,9 +52,8 @@ export default function ProductDetails({cartItems,handleAddToCart}){
             <Col>
             <div style={{display:'flex',flexWrap:'wrap'}}>
                 <h2>other product in same category</h2>
-            {otherProducts.map((product)=>{
-                
-                if(product.id === id){
+            {otherProducts.map((product) => {
+                if(product.id == id) return
                  return(
                     <Card key={product.id} style={{width:'7rem', border:'none',margin:20}}>
                         <Card.Img src={product.images[0]} />
@@ -62,8 +61,8 @@ export default function ProductDetails({cartItems,handleAddToCart}){
                         <Card.Text>$ {product.price}</Card.Text>
                         <Button onClick={()=>navigate(`/Product/${product.id}`,{state:product})} style={{width:120}}>view item</Button>
                     </Card>
-                );
-            }return null;
+                )
+            
      })}
             </div>
             </Col>
