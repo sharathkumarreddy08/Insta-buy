@@ -11,14 +11,14 @@ export default function Cart({cartItems}){
     useEffect(() =>{
       let tempPrice = 0;
       let tempQuantity = 0;
-      Object.keys(cartItems).map((cartItemId) =>{
+      Object.keys(cartItems).forEach((cartItemId) =>{
         const details = cartItems[cartItemId];
         tempQuantity += details.quantity;
         tempPrice += details.quantity * details.price
       });
       setTotalQuantity(tempQuantity);
       setTotalPrice(tempPrice);
-    },[])
+    },[cartItems])
     return(
         <div style={{margin:60}}>
             <Row>
